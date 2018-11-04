@@ -1,4 +1,4 @@
-django<=1.11
+django>=1.11.15
 social-auth-app-django
 python-jose
 six
