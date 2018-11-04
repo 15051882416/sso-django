@@ -1,5 +1,5 @@
 FROM python:3.6
-
+ENV PYTHONUNBUFFERED 1
 WORKDIR /home/app
 
 #If we add the requirements and install dependencies first, docker can use cache if requirements don't change

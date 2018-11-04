@@ -21,13 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*dn4z%$4b6-d1+epmb=hd1m3g#$*1*%&%x+4m_8*cvakee%=7q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -126,6 +124,9 @@ STATIC_URL = '/static/'
 ENV_FILE = find_dotenv()
 if ENV_FILE:
     load_dotenv(ENV_FILE)
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'demo'
 
 # SOCIAL AUTH  AUTH0 BACKEND CONFIG
 SOCIAL_AUTH_TRAILING_SLASH = False
