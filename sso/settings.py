@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'webappexample.urls'
+ROOT_URLCONF = 'sso.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webappexample.wsgi.application'
+WSGI_APPLICATION = 'sso.wsgi.application'
 
 
 # Database
